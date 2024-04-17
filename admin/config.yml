@@ -19,15 +19,22 @@ collections:
   label_singular: 'Learning Resource'
   folder: items
   create: true
+  path: '{{slug}}/index'
+  media_folder: ''
+  public_folder: ''
   fields:
   - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'item' }
   - { label: Title, name: title, widget: string }
-  - { label: "Logo", name: "logo", widget: "image", media_folder: "images", required: false }
+  - { label: "Logo", name: "logo", widget: "image", required: false }
   - { label: URL, name: url, widget: string }
   - label: "Skills"
+    label_singular: "Skill"
     name: skill-levels
     widget: list
-    summary: '{{fields.skill}} - {{fields.level}}'
+    # There must be at least one entry for skill level:
+    min: 1
+    # Show skill and level in collapsed view of each entry:
+    summary: '{{fields.skill}} - level {{fields.level}}'
     fields:
         - {label: "Skill", name: "skill", widget: "relation", collection: "skills", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
         - label: "Level"
@@ -40,6 +47,12 @@ collections:
           - { label: "3. Advanced", value: "3" }
           - { label: "4. Expert", value: "4" }
   - { label: "Body", name: "body", widget: "markdown", required: false }
+  - label: files
+    name: files
+    widget: file
+    media_library:
+      config:
+        multiple: true
 
 - name: skills
   label: Skills
