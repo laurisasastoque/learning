@@ -26,8 +26,8 @@ collections:
   - label: "Skills"
     name: skill-levels
     widget: list
-    fields: 
-        - {label: "Skill", name: "skill", widget: "relation", collection: "skills" }
+    fields:
+        - {label: "Skill", name: "skill", widget: "relation", collection: "skills", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
         - {label: "Level", name: "level", widget: "select", options: ["0", "1", "2", "3", "4"] }
   - { label: "Body", name: "body", widget: "markdown", required: false }
 
@@ -36,8 +36,8 @@ collections:
   label_singular: Skill
   folder: skills
   fields:
-  - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'skill' }
   - { label: Title, name: title, widget: string }
+  - {label: "Competency Area", name: "competency-area", widget: "select", options: ["Governance, Resourcing, and Management", "Communications and Advocacy", "Information Technology", "Legal and Social Responsibilities", "Digital Preservation Domain Specific"] }
   - { label: "Body", name: "body", widget: "markdown", required: false }
 
 - name: 'pages'
