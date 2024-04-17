@@ -50,6 +50,7 @@ collections:
   - label: files
     name: files
     widget: file
+    required: false
     media_library:
       config:
         multiple: true
