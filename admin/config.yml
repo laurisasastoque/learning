@@ -47,6 +47,12 @@ collections:
           - { label: "2. Intermediate", value: "2" }
           - { label: "3. Advanced", value: "3" }
           - { label: "4. Expert", value: "4" }
+  - label: "Roles"
+    label_singular: "Role"
+    name: roles
+    widget: list
+    fields:
+        - {label: "Role", name: "role", widget: "relation", collection: "roles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
   - { label: "Body", name: "body", widget: "markdown", required: false }
   - label: files
     name: files
@@ -60,10 +66,25 @@ collections:
   label: Skills
   label_singular: Skill
   folder: skills
+  create: true
   fields:
   - { label: Title, name: title, widget: string }
   - {label: "Competency Area", name: "competency-area", widget: "select", options: ["Governance, Resourcing, and Management", "Communications and Advocacy", "Information Technology", "Legal and Social Responsibilities", "Digital Preservation Domain Specific"] }
   - { label: "Body", name: "body", widget: "markdown", required: false }
+
+- name: roles
+  label: Roles
+  label_singular: Role
+  folder: roles
+  create: true
+  fields:
+  - { label: Name, name: title, widget: string }
+  - { label: "Description", name: "body", widget: "markdown", required: false }
+  - label: "Alternative Names"
+    name: alternative-names
+    widget: list
+    fields:
+    - { label: Name, name: name, widget: string }
 
 - name: 'pages'
   label: 'Other Pages'
