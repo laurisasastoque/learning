@@ -33,6 +33,7 @@ collections:
     widget: list
     # There must be at least one entry for skill level:
     min: 1
+    max: 10
     # Show skill and level in collapsed view of each entry:
     summary: '{{fields.skill}} - level {{fields.level}}'
     fields:
