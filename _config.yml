@@ -14,9 +14,9 @@ exclude:
   - README.md
 
 # markdown: CommonMarkGhPages
-commonmark:
-  options: ["FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table"]
+#commonmark:
+#  options: ["FOOTNOTES"]
+#  extensions: ["strikethrough", "autolink", "table"]
 
 
 collections:
@@ -29,8 +29,11 @@ collections:
 
 # Set defaults for some properties:
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # empty string for all files
     values:
       layout: "default"
+  - scope:
+      path: "_items" # empty string for all files
+    values:
+      layout: "item"

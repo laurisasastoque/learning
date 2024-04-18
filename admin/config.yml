@@ -23,7 +23,6 @@ collections:
   media_folder: ''
   public_folder: ''
   fields:
-  - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'item' }
   - { label: Title, name: title, widget: string }
   - { label: "Logo", name: "logo", widget: "image", required: false }
   - { label: URL, name: url, widget: string }
@@ -96,6 +95,5 @@ collections:
       file: 'index.md'
       preview_path: /
       fields:
-        - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'home' }
         - { label: 'Title', name: 'title', widget: 'string', default: 'Welcome' }
         - { label: 'Body', name: 'body', widget: 'markdown' }
