@@ -1,0 +1,36 @@
+title: Learning Resources
+description: Learning resources site
+url: "https://digipres.org/learning/"
+theme: picodocs
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable : true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# markdown: CommonMarkGhPages
+commonmark:
+  options: ["FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table"]
+
+
+collections:
+  items:
+    output: true
+  skills:
+    output: true
+  roles:
+    output: true
+
+# Set defaults for some properties:
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      layout: "default"

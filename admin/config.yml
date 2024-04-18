@@ -17,7 +17,7 @@ collections:
 - name: items
   label: Learning Resources
   label_singular: 'Learning Resource'
-  folder: items
+  folder: _items
   create: true
   path: '{{slug}}/index'
   media_folder: ''
@@ -65,7 +65,7 @@ collections:
 - name: skills
   label: Skills
   label_singular: Skill
-  folder: skills
+  folder: _skills
   create: true
   fields:
   - { label: Title, name: title, widget: string }
@@ -75,7 +75,7 @@ collections:
 - name: roles
   label: Roles
   label_singular: Role
-  folder: roles
+  folder: _roles
   create: true
   fields:
   - { label: Name, name: title, widget: string }

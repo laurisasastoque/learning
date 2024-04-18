@@ -1,4 +1,15 @@
 ---
-title: Welcome to this
+title: Welcome
+navigation: 1
 ---
+
+{% if site.show_edit_site_warning %}
+{% capture warning %}
+{: .warning }
+This is the work-in-progress version of the site that is hosted by Netlify and is used to edit and preview the site. The live site is at <https://digipres.org/publications/> (hosted on GitHub Pages). The editor interface is available [here](./admin/) and requires a GitHub account to log in.
+{% endcapture %}
+{{ warning | markdownify }}
+{% endif %}
+
+
 Welcome
