@@ -1,3 +1,5 @@
+---
+---
 ![The Digital Preservation Coalition (DPC) logo](./media/image1.jpg){width="3.7878696412948383in" height="0.8333333333333334in"}
 
 **DPC Digital Preservation Competency Framework**
