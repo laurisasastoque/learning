@@ -2,8 +2,7 @@
 title: Learning Resources
 ---
 
-
-<table data-toggle="table" data-pagination="true" data-search="true">
+<table id="mainTable" data-page-length="50" data-pagefind-ignore>
   <thead>
     <tr>
       <th>Resource</th>

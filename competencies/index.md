@@ -40,3 +40,33 @@ title: Competencies
 </table>
 
 
+Competency Area	Skill Element No.	Skill Element
+Governance, Resourcing, and Management	1	Policy Development
+	2	Risk Management
+	3	Resource Management
+	4	Staff Management
+	5	Strategy and Planning
+	6	Analysis and Decision-Making
+Communications and Advocacy	7	Effective Communication
+	8	Collaboration and Teamwork
+	9	Stakeholder Analysis and Engagement
+	10	User Analysis and Engagement
+	11	Advocacy
+	12	Training
+	13	Producing Documentation
+Information Technology	14	General IT Literacy
+	15	Computer Programming
+	16	System Procurement
+	17	Storage Infrastructures
+	18	Information Security
+	19	Workflow Development and Implementation
+Legal and Social Responsibilities	20	Legal and Regulatory Compliance
+	21	Environmental Impact
+	22	Inclusion and Diversity
+	23	Ethics
+Digital Preservation Domain Specific	24	Metadata Standards and Implementation
+	25	Information Management Principles
+	26	Approaches to Preservation
+	27	DP Standards and Models
+	28	Managing Access
+

@@ -9,4 +9,13 @@ layout: default
 
 {{ page.roles }}
 
+{{ page.logo }}
+
+{{ page.files }}
+
 {{ content }}
+
+
+<ul>
+  <li><a target="_blank" href="https://digipres-org-learning.netlify.app/admin/#/collections/resources/entries/{{ page.path | remove: "_resources/" | remove: ".md"}}">EDIT</a></a></li>
+</ul>
