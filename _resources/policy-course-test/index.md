@@ -7,5 +7,7 @@ skill-levels:
     level: "1"
 roles:
   - role: A test role
+files:
+  - upsetjs.json
 ---
 Some notes about this example
