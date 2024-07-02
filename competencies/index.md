@@ -1,9 +1,8 @@
 ---
-title: Learning Resources
+title: Competencies
 ---
 
-
-<table data-toggle="table" data-pagination="true" data-search="true">
+<table data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true">
   <thead>
     <tr>
       <th>Resource</th>
@@ -12,7 +11,7 @@ title: Learning Resources
     </tr>
   </thead>
   <tbody>
-{% for item in site.items %}
+{% for item in site.competencies %}
     <tr>
       <td data-sortable="true">
     <a href="{{ item.url }}">
@@ -39,4 +38,5 @@ title: Learning Resources
 {% endfor %}
   </tbody>
 </table>
+
 

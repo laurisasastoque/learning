@@ -36,7 +36,7 @@ collections:
     # Show skill and level in collapsed view of each entry:
     summary: '{{fields.skill}} - level {{fields.level}}'
     fields:
-        - {label: "Skill", name: "skill", widget: "relation", collection: "skills", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+        - { label: "Skill", name: "skill", widget: "relation", collection: "skills", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
         - label: "Level"
           name: "level"
           widget: "select"
@@ -51,7 +51,7 @@ collections:
     name: roles
     widget: list
     fields:
-        - {label: "Role", name: "role", widget: "relation", collection: "roles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+        - { label: "Role", name: "role", widget: "relation", collection: "roles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
   - { label: "Body", name: "body", widget: "markdown", required: false }
   - label: files
     name: files
@@ -68,7 +68,16 @@ collections:
   create: true
   fields:
   - { label: Title, name: title, widget: string }
-  - {label: "Competency Area", name: "competency-area", widget: "select", options: ["Governance, Resourcing, and Management", "Communications and Advocacy", "Information Technology", "Legal and Social Responsibilities", "Digital Preservation Domain Specific"] }
+  - label: "Competency Area"
+    name: "competency-area"
+    widget: "select"
+    options: [
+      "Governance, Resourcing, and Management", 
+      "Communications and Advocacy", 
+      "Information Technology", 
+      "Legal and Social Responsibilities", 
+      "Digital Preservation Domain Specific"
+    ]
   - { label: "Body", name: "body", widget: "markdown", required: false }
 
 - name: roles

@@ -1,18 +1,18 @@
 ---
-title: Learning Resources
+title: Roles
 ---
 
 
 <table data-toggle="table" data-pagination="true" data-search="true">
   <thead>
     <tr>
-      <th>Resource</th>
+      <th>Role</th>
       <th>Skills</th>
       <th>Roles</th>
     </tr>
   </thead>
   <tbody>
-{% for item in site.items %}
+{% for item in site.roles %}
     <tr>
       <td data-sortable="true">
     <a href="{{ item.url }}">

@@ -1,24 +1,18 @@
-title: Learning Resources
+title: DigiPres Learning Resources
 description: Learning resources site
-url: "https://digipres.org/learning/"
-theme: picodocs
+url: "/learning/"
+
+show_edit_site_warning: true
 
 markdown: kramdown
-kramdown:
-  syntax_highlighter_opts:
-    disable : true
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
 
 # markdown: CommonMarkGhPages
 #commonmark:
 #  options: ["FOOTNOTES"]
 #  extensions: ["strikethrough", "autolink", "table"]
 
-
+# Using Jekyll Collections to manage the contents in an idiomatic way:
+# See https://jekyllrb.com/docs/collections/
 collections:
   items:
     output: true
@@ -39,3 +33,37 @@ defaults:
       type: items # Using the collections name to do the mapping
     values:
       layout: "item"
+
+navigation:
+- text: Resources
+  url: /items/
+- text: Skills
+  url: /skills/
+- text: Competencies
+  url: /competencies/
+- text: Roles
+  url: /roles/
+
+
+# Manage includes/excludes:
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+include:
+ - _pagefind
+
+#theme: jekyll-theme-bootstrap5
+paginate: 3
+plugins:
+  - jekyll-feed
+  - jekyll-paginate

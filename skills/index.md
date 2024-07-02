@@ -1,5 +1,5 @@
 ---
-title: Learning Resources
+title: Skills
 ---
 
 
@@ -12,7 +12,7 @@ title: Learning Resources
     </tr>
   </thead>
   <tbody>
-{% for item in site.items %}
+{% for item in site.skills %}
     <tr>
       <td data-sortable="true">
     <a href="{{ item.url }}">

@@ -10,37 +10,11 @@ navigation: 10
 
 August 2022
 
-# **Contents**
+# Contents
+{:.no_toc}
 
-[1. Document History [3](#document-history)](#document-history)
-
-[2. Acknowledgements [3](#acknowledgements)](#acknowledgements)
-
-[3. Copyright and Reuse [3](#copyright-and-reuse)](#copyright-and-reuse)
-
-[4. Introduction [4](#introduction)](#introduction)
-
-[5. How to Use the Competency Framework [4](#how-to-use-the-competency-framework)](#how-to-use-the-competency-framework)
-
-[5.1 Explanation of Terms [5](#explanation-of-terms)](#explanation-of-terms)
-
-[5.2 Overview of the Competency Framework [5](#overview-of-the-competency-framework)](#overview-of-the-competency-framework)
-
-[5.3 Relationship to the DPC Rapid Assessment Model [6](#relationship-to-the-dpc-rapid-assessment-model)](#relationship-to-the-dpc-rapid-assessment-model)
-
-[5.4 Potential Uses and Their Benefits [7](#potential-uses-and-their-benefits)](#potential-uses-and-their-benefits)
-
-[6. Comments, Feedback and Revisions [8](#comments-feedback-and-revisions)](#comments-feedback-and-revisions)
-
-[7. The Competency Framework [9](#the-competency-framework)](#the-competency-framework)
-
-[7.1 Competency Areas and Skills Elements [9](#competency-areas-and-skills-elements)](#competency-areas-and-skills-elements)
-
-[7.2 Skill Levels [10](#skill-levels)](#skill-levels)
-
-[7.3 Skill Element Examples [11](#skill-element-examples)](#skill-element-examples)
-
-[8. Appendix One - Key Bibliography [16](#appendix-one---key-bibliography)](#appendix-one---key-bibliography)
+* TOC
+{:toc}
 
 # Document History
 
