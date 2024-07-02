@@ -14,10 +14,10 @@ publish_mode: editorial_workflow
 
 collections:
 
-- name: items
+- name: resources
   label: Learning Resources
   label_singular: 'Learning Resource'
-  folder: _items
+  folder: _resources
   create: true
   path: '{{slug}}/index'
   media_folder: ''

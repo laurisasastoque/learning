@@ -14,7 +14,7 @@ markdown: kramdown
 # Using Jekyll Collections to manage the contents in an idiomatic way:
 # See https://jekyllrb.com/docs/collections/
 collections:
-  items:
+  resources:
     output: true
   skills:
     output: true
@@ -30,13 +30,13 @@ defaults:
       layout: "default"
   - scope:
       path: ""
-      type: items # Using the collections name to do the mapping
+      type: resources # Using the collections name to do the mapping
     values:
-      layout: "item"
+      layout: "resource"
 
 navigation:
 - text: Resources
-  url: /items/
+  url: /resources/
 - text: Skills
   url: /skills/
 - text: Competencies

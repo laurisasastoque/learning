@@ -12,7 +12,7 @@ title: Learning Resources
     </tr>
   </thead>
   <tbody>
-{% for item in site.items %}
+{% for item in site.resources %}
     <tr>
       <td data-sortable="true">
     <a href="{{ item.url }}">
