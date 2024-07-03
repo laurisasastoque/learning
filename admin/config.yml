@@ -53,16 +53,16 @@ collections:
     widget: list
     fields:
         - { label: "Role", name: "role", widget: "relation", collection: "roles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
-  - { label: "Learning Objectives", name: learning-objectives, widget: list }
-  - { label: "Cost", name: cost, widget: string }
-  - { label: "Language", name: language, widget: string }
-  - { label: "Creators", name: creators, widget: list }
-  - { label: "Provider", name: provider, widget: string }
-  - { label: "Licence", name: licence, widget: string }
-  - { label: "Resource Type", name: resource-type, widget: string }
-  - { label: "Accredited", name: accredited, widget: string }
-  - { label: "Open Access", name: open-access, widget: boolean }
-  - { label: "Series", name: series, widget: string }
+  - { label: "Learning Objectives", name: learning-objectives, widget: list, allow_add: true, required: false }
+  - { label: "Cost", name: cost, widget: string, required: false }
+  - { label: "Language", name: language, widget: string, required: false }
+  - { label: "Creators", name: creators, widget: list, allow_add: true, required: false }
+  - { label: "Provider", name: provider, widget: string, required: false }
+  - { label: "Licence", name: licence, widget: string, required: false }
+  - { label: "Resource Type", name: resource-type, widget: string, required: false }
+  - { label: "Accredited", name: accredited, widget: string, required: false }
+  - { label: "Open Access", name: open-access, widget: boolean, required: false }
+  - { label: "Series", name: series, widget: string, required: false }
   - label: files
     name: files
     widget: file
