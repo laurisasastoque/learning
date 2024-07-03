@@ -9,5 +9,6 @@ roles:
   - role: A test role
 files:
   - upsetjs.json
+created: 2024-07-03
 ---
 Some notes about this example
