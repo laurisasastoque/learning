@@ -10,6 +10,8 @@ roles:
 learning-objectives:
   - learning-objective: Moar Cheese
   - learning-objective: Additional Cheese
+creators:
+  - creator: Jeff
 files:
   - upsetjs.json
   - test-image.png
