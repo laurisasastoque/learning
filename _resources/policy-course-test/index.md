@@ -7,8 +7,12 @@ skill-levels:
     level: "1"
 roles:
   - role: A test role
+learning-objectives:
+  - learning-objective: Moar Cheese
+  - learning-objective: Additional Cheese
 files:
   - upsetjs.json
+  - test-image.png
 created: 2024-07-03
 ---
 Some notes about this example
