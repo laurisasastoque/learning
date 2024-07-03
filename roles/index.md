@@ -3,16 +3,15 @@ title: Roles
 ---
 
 
-<table data-toggle="table" data-pagination="true" data-search="true">
+<table class="table">
   <thead>
     <tr>
       <th>Role</th>
-      <th>Skills</th>
-      <th>Roles</th>
+      <th>Alternative Names</th>
     </tr>
   </thead>
   <tbody>
-{% for item in site.roles %}
+  {% for item in site.roles %}
     <tr>
       <td data-sortable="true">
     <a href="{{ item.url }}">
@@ -20,23 +19,12 @@ title: Roles
     </a>
       </td>
       <td>
-      {% for skill-level in item.skill-levels %}       
-      <button type="button" class="btn btn-primary position-relative">
-        {{ skill-level.skill }}
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-          {{ skill-level.level}}
-          <span class="visually-hidden">skill level</span>
-        </span>
-      </button>
-      {% endfor %}
-      </td>
-      <td>
-      {% for role in item.roles %}
-      {{ role.role }}
+      {% for alts in item.alternative-names %}
+      {{ alts.name }}
       {% endfor %}
       </td>
     </tr>
-{% endfor %}
+  {% endfor %}
   </tbody>
 </table>
 

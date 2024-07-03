@@ -6,7 +6,8 @@ gem "jekyll", "~> 4.3.3"
 gem 'jekyll-feed'
 gem 'jekyll-paginate'
 
-#group :jekyll_plugins do
+group :jekyll_plugins do
+  gem "jekyll-last-modified-at"
 #  gem 'jekyll-commonmark-ghpages'
-#end
+end
 

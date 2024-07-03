@@ -23,7 +23,8 @@ collections:
   media_folder: ''
   public_folder: ''
   fields:
-  - { label: Title, name: title, widget: string }
+  - { label: "Name", name: title, widget: string }
+  - { label: "Description", name: "body", widget: "markdown", required: false }
   - { label: "Logo", name: "logo", widget: "image", required: false }
   - { label: URL, name: resource_url, widget: string }
   - label: "Skills"
@@ -52,7 +53,16 @@ collections:
     widget: list
     fields:
         - { label: "Role", name: "role", widget: "relation", collection: "roles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
-  - { label: "Body", name: "body", widget: "markdown", required: false }
+  - { label: "Learning Objectives", name: learning-objectives, widget: list }
+  - { label: "Cost", name: cost, widget: string }
+  - { label: "Language", name: language, widget: string }
+  - { label: "Creators", name: creators, widget: list }
+  - { label: "Provider", name: provider, widget: string }
+  - { label: "Licence", name: licence, widget: string }
+  - { label: "Resource Type", name: resource-type, widget: string }
+  - { label: "Accredited", name: accredited, widget: string }
+  - { label: "Open Access", name: open-access, widget: boolean }
+  - { label: "Series", name: series, widget: string }
   - label: files
     name: files
     widget: file
@@ -60,6 +70,16 @@ collections:
     media_library:
       config:
         multiple: true
+  - label: "Related Items"
+    label_singular: "Related Item"
+    name: related-items
+    widget: list
+    fields:
+        - { label: "Resource", name: "resource", widget: "relation", collection: "resources", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+  - label: "Resource record created on"
+    name: "created"
+    widget: "datetime"
+    date_format: "YYYY-MM-DD"
 
 - name: skills
   label: Skills

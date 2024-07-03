@@ -55,10 +55,14 @@
 
 
     <div class="container-sm my-3 my-lg-5" data-pagefind-body>
-      <h2{% if page.collection %} data-pagefind-filter="kind:{{ page.collection | capitalize }}"{% endif %}>{{ page.title }}</h2>
+      <h1{% if page.collection %} data-pagefind-filter="kind:{{ page.collection | capitalize }}"{% endif %}>{{ page.title }}</h1>
 
       {{ content }}
 
+      <hr>
+<p>
+  Page last modified on {{ page.last_modified_at | date: "%Y-%m-%d at %H:%M" }}.
+</p>
     </div>
 
   

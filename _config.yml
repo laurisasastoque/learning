@@ -66,3 +66,4 @@ paginate: 3
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-last-modified-at
