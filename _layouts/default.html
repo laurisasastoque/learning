@@ -22,15 +22,37 @@
   </head>
   <body>
 
+  <style>
+    .bg-skill-level-0 {
+      background-color: #880000;
+    }
+    .bg-skill-level-1 {
+      background-color: #aa0000;
+    }
+    .bg-skill-level-2 {
+      background-color: #cc0000;
+    }
+    .bg-skill-level-3 {
+      background-color: #dd0000;
+    }
+    .bg-skill-level-4 {
+      background-color: #ee0000;
+    }
+    .bg-skill-level-5 {
+      background-color: #ff0000;
+    }
+  </style>
+
     {% if site.show_edit_site_warning %}
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
       <strong>Warning: </strong>
-      This is the work-in-progress version of the site that is used to edit and preview the site. The live site is at <a href="#" class="alert-link">https://digipres.org/publications/</a>. The editor interface is available <a href="/admin/" class="alert-link">here</a> and requires a GitHub account to log in.
+      This is the work-in-progress version of the site that is used to edit and preview the site. The live site is at <a href="#" class="alert-link">TBC</a>. For editors, the content management system is available <a href="/admin/" class="alert-link">here</a> and requires a GitHub account to log in.
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     {% endif %}
 
     {% include navigation.html %}
+
 
     <div class="container-sm my-3 my-lg-5" data-pagefind-body>
       <h2{% if page.collection %} data-pagefind-filter="kind:{{ page.collection | capitalize }}"{% endif %}>{{ page.title }}</h2>

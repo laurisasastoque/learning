@@ -1,6 +1,6 @@
 ---
 title: A different example
-url: https://www.anotherone.com/
+resource_url: https://www.anotherone.com/
 skill-levels:
   - skill: Policy Development
     level: "3"

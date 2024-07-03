@@ -1,6 +1,7 @@
 title: DigiPres Learning Resources
 description: Learning resources site
 url: "/learning/"
+editor_url: https://digipres-org-learning.netlify.app
 
 show_edit_site_warning: true
 
@@ -39,8 +40,6 @@ navigation:
   url: /resources/
 - text: Skills
   url: /skills/
-- text: Competencies
-  url: /competencies/
 - text: Roles
   url: /roles/
 

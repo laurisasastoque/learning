@@ -8,9 +8,9 @@ backend:
 media_folder: "assets/uploads"
 
 # Use the PR-based editorial workflow:
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 
-#site_url: https://www.digipres.org/learning/
+#site_url: /learning/
 
 collections:
 
@@ -25,7 +25,7 @@ collections:
   fields:
   - { label: Title, name: title, widget: string }
   - { label: "Logo", name: "logo", widget: "image", required: false }
-  - { label: URL, name: url, widget: string }
+  - { label: URL, name: resource_url, widget: string }
   - label: "Skills"
     label_singular: "Skill"
     name: skill-levels

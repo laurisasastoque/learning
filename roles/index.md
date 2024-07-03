@@ -31,7 +31,7 @@ title: Roles
       {% endfor %}
       </td>
       <td>
-      {% for role in item.roles%}
+      {% for role in item.roles %}
       {{ role.role }}
       {% endfor %}
       </td>

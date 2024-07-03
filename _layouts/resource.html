@@ -3,19 +3,26 @@ layout: default
 ---
 
 
-{{ page.url }}
 
-{{ page.skill-levels }}
-
-{{ page.roles }}
-
-{{ page.logo }}
-
-{{ page.files }}
+{% if page.logo %}
+<img src="{{ page.logo }}" class="img-thumbnail float-end mx-3" alt="Edit this entry" style="max-width: 200px";>
+{% endif %}
 
 {{ content }}
 
+<dl>
+    <dt>URL</dt>
+    <dd><a href="{{ page.resource_url }}">{{ page.resource_url }}</a></dd>
+    <dt>Skills</dt>
+    <dd>{% include skill_levels.html skills=page.skill-levels %}</dd>
+    <dt>Roles</dt>
+    <dd>{% include roles.html roles=page.roles %}</dd>
+    {% if page.files %}
+    <dt>Files</dt>
+    <dd><a href="{{ page.files }}">{{ page.files }}</a></dd>
+    {% endif %}
+    <dt></dt>
+    <dd></dd>
+</dl>
 
-<ul>
-  <li><a target="_blank" href="https://digipres-org-learning.netlify.app/admin/#/collections/resources/entries/{{ page.path | remove: "_resources/" | remove: ".md"}}">EDIT</a></a></li>
-</ul>
+<a target="_blank" class="btn btn-primary float-end" href="{{ site.editor_url }}/admin/#/collections/resources/entries/{{ page.path | remove: "_resources/" | remove: ".md"}}" role="button">Edit This Resource</a>

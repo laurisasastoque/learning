@@ -19,20 +19,10 @@ title: Learning Resources
     </a>
       </td>
       <td>
-      {% for skill-level in item.skill-levels %}       
-      <button type="button" class="btn btn-primary position-relative">
-        {{ skill-level.skill }}
-        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-          {{ skill-level.level}}
-          <span class="visually-hidden">skill level</span>
-        </span>
-      </button>
-      {% endfor %}
+      {% include skill_levels.html skills=item.skill-levels %}
       </td>
       <td>
-      {% for role in item.roles%}
-      {{ role.role }}
-      {% endfor %}
+      {% include roles.html roles=item.roles %}
       </td>
     </tr>
 {% endfor %}
