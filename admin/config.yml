@@ -53,7 +53,12 @@ collections:
     widget: list
     fields:
         - { label: "Role", name: "role", widget: "relation", collection: "roles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
-  - { label: "Learning Objectives", name: learning-objectives, widget: list, allow_add: true, required: false }
+  - label: "Learning Objectives"
+    name: learning-objectives
+    widget: list
+    required: false
+    fields:
+    - { label: "Learning Objective", name: learning-objective, widget: string, required: false }
   - { label: "Cost", name: cost, widget: string, required: false }
   - { label: "Language", name: language, widget: string, required: false }
   - { label: "Creators", name: creators, widget: list, allow_add: true, required: false }
