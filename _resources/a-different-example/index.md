@@ -6,7 +6,6 @@ skill-levels:
     level: "3"
 roles:
   - role: A test role
-learning-objectives: []
 cost: FREE
 language: Englishish
 provider: Bob's Cat
@@ -20,3 +19,4 @@ related-items:
 created: 2024-07-03
 ---
 This is a wholly different thing, not like the others.
+
