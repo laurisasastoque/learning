@@ -1,9 +1,9 @@
 title: DigiPres Learning Resources
 description: Learning resources site
-url: "/learning/"
-editor_url: https://digipres-learning-resources.netlify.app/
 
-editable: true
+editor_url: https://digipres-learning-resources.netlify.app/
+editable: false
+baseurl: "/learning/"
 
 markdown: kramdown
 
