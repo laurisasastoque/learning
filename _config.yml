@@ -34,6 +34,16 @@ defaults:
       type: resources # Using the collections name to do the mapping
     values:
       layout: "resource"
+  - scope:
+      path: ""
+      type: skills # Using the collections name to do the mapping
+    values:
+      layout: "skills"
+  - scope:
+      path: ""
+      type: roles # Using the collections name to do the mapping
+    values:
+      layout: "roles"
 
 navigation:
 - text: Resources
@@ -42,6 +52,8 @@ navigation:
   url: /skills/
 - text: Roles
   url: /roles/
+- text: Search
+  url: /search/
 
 
 # Manage includes/excludes:

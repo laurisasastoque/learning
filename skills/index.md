@@ -2,16 +2,34 @@
 title: Skills
 ---
 
+<style>
+tr.area-governance-resourcing-and-management td {
+ background-color: lightpink;
+}
+tr.area-communications-and-advocacy td {
+ background-color: lightyellow;
+}
+tr.area-information-technology td {
+ background-color: lightgreen;
+}
+tr.area-legal-and-social-responsibilities td {
+ background-color: lightblue;
+}
+tr.area-digital-preservation-domain-specific td {
+ background-color: #CBC3E3;
+}
+</style>
+
 {% assign skills_by_area = site.skills | group_by:"competency-area" %}
 
-<table class="table">
-  <thead>
+<table class="table table-bordered border-dark">
+  <thead class="table-light border-dark">
     <tr>
       <th>Competency Area</th>
       <th>Skill Element</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody class="table-group-divider">
   {% for area in skills_by_area %}
   {% for skill in area.items %}
     <tr class="area-{{ area.name | slugify }}">
@@ -35,22 +53,22 @@ title: Skills
 
 <h2 id="skill-levels">Skill Levels</h2>
 
-<table class="table">
+<table class="table table-bordered border-dark">
 <colgroup>
 <col style="width: 9%">
 <col style="width: 18%">
 <col style="width: 39%">
 <col style="width: 32%">
 </colgroup>
-<thead>
-<tr class="header">
-<th><strong>Level No.</strong></th>
-<th><strong>Skill Level</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Example Activity Descriptor Words</strong></th>
+<thead class="table-light border-dark">
+<tr>
+<th>Level No.</th>
+<th>Skill Level</th>
+<th>Description</th>
+<th>Example Activity Descriptor Words</th>
 </tr>
 </thead>
-<tbody>
+<tbody class="table-group-divider">
 <tr class="odd">
 <td><strong>0</strong></td>
 <td><strong>Novice</strong></td>

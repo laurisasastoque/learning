@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<dl>
+{% if page.alternative-names %}
+<dt>Alternative Names</dt>
+{% for name in page.alternative-names %}
+<dd>{{ name.name }}</dd>
+{% endfor %}
+{% endif %}
+</dl>
+
+<h2>Resources</h2>
+
+<table id="mainTable" data-page-length="50" data-pagefind-ignore>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Skills</th>
+      <th>Roles</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for item in site.resources %}
+{% assign show = false %}
+{% for role in item.roles %}
+{% if role.role == page.title %}
+{% assign show = true %}
+{% endif %}
+{% endfor %}
+{% if show %}
+    <tr>
+      <td data-sortable="true">
+    <a href="{{ item.url }}">
+      {{ item.title }}
+    </a>
+      </td>
+      <td>
+      {% include skill_levels.html skills=item.skill-levels %}
+      </td>
+      <td>
+      {% include roles.html roles=item.roles %}
+      </td>
+    </tr>
+{% endif %}
+{% endfor %}
+  </tbody>
+</table>
+
