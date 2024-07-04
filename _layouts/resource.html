@@ -78,14 +78,15 @@ layout: default
     {% if page.files %}
     <dt>Files</dt>
     {% for file in page.files %}
-    <dd><a href="{{ file | relative_url }}">{{ file }}</a></dd>
+    <dd><a href="{{ file | prepend: base_path | relative_url }}">{{ file }}</a></dd>
     {% endfor %}
     {% endif %}
 
     {% if page.related-items %}
     <dt>Related Items</dt>
     {% for item in page.related-items %}
-    <dd><a href="{{ item.resource }}">{{ item.resource }}</a></dd>
+    {% assign related = site.resources | where:"title", item.resource | first %}
+    <dd><a href="{{ related.url | relative_url }}">{{ item.resource }}</a></dd>
     {% endfor %}
     {% endif %}
 

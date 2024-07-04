@@ -73,6 +73,11 @@ exclude:
 include:
  - _pagefind
 
+feed:
+  collections:
+    resources:
+      path: "/resources/feed.xml"
+
 #theme: jekyll-theme-bootstrap5
 paginate: 3
 plugins:
