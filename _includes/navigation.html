@@ -7,7 +7,7 @@
     <ul class="nav nav-pills">
       {% for link in site.navigation %}
       <li class="nav-item">
-        <a href="{{link.url}}" {% if page.url == link.url %}class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %}>
+        <a href="{{ link.url | relative_url }}" {% if page.url == link.url %}class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %}>
            {{link.text}}</a></li>
       {% endfor %}
     </ul>
