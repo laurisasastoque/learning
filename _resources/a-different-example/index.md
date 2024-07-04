@@ -4,8 +4,7 @@ resource_url: https://www.anotherone.com/
 skill-levels:
   - skill: Policy Development
     level: "3"
-roles:
-  - role: A test role
+roles: []
 cost: FREE
 language: Englishish
 provider: Bob's Cat
