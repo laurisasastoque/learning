@@ -41,7 +41,7 @@ layout: default
 {% if show %}
     <tr>
       <td data-sortable="true">
-    <a href="{{ item.url }}">
+    <a href="{{ item.url | relative_url }}">
       {{ item.title }}
     </a>
       </td>

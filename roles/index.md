@@ -2,7 +2,6 @@
 title: Roles
 ---
 
-
 <table class="table">
   <thead>
     <tr>
@@ -14,7 +13,7 @@ title: Roles
   {% for item in site.roles %}
     <tr>
       <td data-sortable="true">
-    <a href="{{ item.url }}">
+    <a href="{{ item.url  | relative_url }}">
       {{ item.title }}
     </a>
       </td>

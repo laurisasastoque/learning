@@ -14,7 +14,7 @@ title: Learning Resources
 {% for item in site.resources %}
     <tr>
       <td data-sortable="true">
-    <a href="{{ item.url }}">
+    <a href="{{ item.url | relative_url }}">
       {{ item.title }}
     </a>
       </td>

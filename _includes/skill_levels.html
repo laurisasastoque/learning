@@ -1,6 +1,6 @@
 {% for skill-level in include.skills %}       
 {% assign skill = site.skills | where:"title", skill-level.skill  | first %}
-<a href="{{ skill.url }}" class="btn btn-primary position-relative">
+<a href="{{ skill.url | relative_url }}" class="btn btn-primary position-relative">
   {{ skill-level.skill }}
   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-skill-level-{{skill-level.level}}">
     {{ skill-level.level}}

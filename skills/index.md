@@ -39,7 +39,7 @@ tr.area-digital-preservation-domain-specific td {
       </td>
       {% endif %}
       <td>
-        <a href="{{ skill.url }}">
+        <a href="{{ skill.url  | relative_url }}">
         {{ skill.title }}
         </a>
       </td>
