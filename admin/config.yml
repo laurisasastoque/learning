@@ -3,7 +3,7 @@
 backend:
   #name: git-gateway
   name: github
-  repo: digipres/learning
+  repo: Digital-Preservation-Coalition/learning
   branch: main
 media_folder: "assets/uploads"
 
