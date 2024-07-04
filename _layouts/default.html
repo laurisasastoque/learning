@@ -18,7 +18,7 @@
     {% if site.description %}
       <meta name="description" content="{{ site.description }}">
     {% endif %}
-    <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+    <link href="{{ '/_pagefind/pagefind-ui.css' | relative_url }}" rel="stylesheet">
   </head>
   <body>
 
