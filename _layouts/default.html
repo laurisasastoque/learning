@@ -43,11 +43,10 @@
     }
   </style>
 
-    {% if site.show_edit_site_warning %}
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {% if site.editable %}
+    <div class="alert alert-warning" role="alert">
       <strong>Warning: </strong>
-      This is the work-in-progress version of the site that is used for edits and previews. The live site is at <a href="#" class="alert-link">TBC</a>. For editors, the content management system is available <a href="/admin/" class="alert-link">here</a> and requires a GitHub account to log in.
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      This is the work-in-progress version of the site that is used for edits and previews. The live site is at <a href="https://digital-preservation-coalition.github.io/learning/" class="alert-link">https://digital-preservation-coalition.github.io/learning/</a>. For editors, the content management system is available <a href="/admin/" class="alert-link">here</a> and requires a GitHub account to log in.
     </div>
     {% endif %}
 

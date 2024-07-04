@@ -3,7 +3,7 @@ description: Learning resources site
 url: "/learning/"
 editor_url: https://digipres-learning-resources.netlify.app/
 
-show_edit_site_warning: true
+editable: true
 
 markdown: kramdown
 

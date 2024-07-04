@@ -96,6 +96,8 @@ layout: default
     <dd>{{ page.last_modified_at | date: "%Y-%m-%d"}}</dd>
 </dl>
 
+{% if site.editable %}
 <p style="text-align: right">
   <a target="_blank" class="btn btn-primary" href="{{ site.editor_url }}/admin/#/collections/resources/entries/{{ page.path | remove: "_resources/" | remove: ".md"}}" role="button">Edit This Resource</a>
 </p>
+{% endif %}

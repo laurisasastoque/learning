@@ -4,6 +4,13 @@ layout: default
 
 {{ content }}
 
+{% if site.editable %}
+<p style="text-align: right">
+  <a target="_blank" class="btn btn-primary" href="{{ site.editor_url }}/admin/#/collections/skills/entries/{{ page.path | remove: "_skills/" | remove: ".md"}}" role="button">Edit This Skill</a>
+</p>
+{% endif %}
+
+
 <h2>Resources</h2>
 
 <table id="mainTable" data-page-length="50" data-pagefind-ignore>

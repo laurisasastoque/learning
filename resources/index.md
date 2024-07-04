@@ -29,3 +29,11 @@ title: Learning Resources
   </tbody>
 </table>
 
+<hr>
+
+{% if site.editable %}
+<p style="text-align: right">
+  <a target="_blank" class="btn btn-primary" href="{{ site.editor_url }}/admin/#/collections/resources/new" role="button">Add A Resource</a>
+</p>
+{% endif %}
+
