@@ -9,9 +9,9 @@ roles:
   - role: Digital Preservation Officer
   - role: Information Studies Student
 learning-objectives:
-  - learning-objective: Explain what digital preservation is
-  - learning-objective: Prioritize digital preservation actions at their organization
-  - learning-objective: Develop and implement digital preservation workflows
+  - learning-objective: 1. Explain what digital preservation is
+  - learning-objective: 2. Prioritize digital preservation actions at their organization
+  - learning-objective: 3. Develop and implement digital preservation workflows
 cost: Free
 language: English
 creators:
