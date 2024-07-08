@@ -18,4 +18,4 @@ related-items:
   - resource: "Novice to Know-How: Digital Preservation for Beginners"
 created: 2024-07-08
 ---
-A Masters/PGDip/PGCert programme that provides an understanding of contemporary information and records management issues. It pays special attention to the management of digital records and electronic resources, and how to manage these alongside analogue resources.
+A Masters/PGDip/PGCert degree programme that provides an understanding of contemporary information and records management issues. It pays special attention to the management of digital records and electronic resources, and how to manage these alongside analogue resources.
