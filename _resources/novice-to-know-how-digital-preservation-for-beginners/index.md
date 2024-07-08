@@ -6,7 +6,8 @@ skill-levels:
   - skill: Approaches to Preservation
     level: "1"
 roles:
-  - role: A test role
+  - role: Digital Preservation Officer
+  - role: Information Studies Student
 learning-objectives:
   - learning-objective: Explain what digital preservation is
   - learning-objective: Prioritize digital preservation actions at their organization
