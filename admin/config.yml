@@ -129,7 +129,12 @@ collections:
     required: false
   - label: "Open Access"
     name: open-access
-    widget: boolean
+    widget: select,
+    options: [
+      "yes",
+      "no",
+      "unsure"
+    ]
     required: false
   - label: "Series"
     name: series
@@ -148,6 +153,7 @@ collections:
     widget: list
     fields:
         - { label: "Resource", name: "resource", widget: "relation", collection: "resources", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+    required: false
   - label: "Resource record created on"
     name: "created"
     widget: "datetime"
