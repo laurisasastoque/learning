@@ -1,5 +1,5 @@
 
 {% for role_name in include.roles %}
 {% assign role = site.roles | where:"title", role_name.role  | first %}
-<a href="{{ role.url | relative_url }}">{{ role.title }}</a>
+<a class="btn btn-success m-1 btn-sm" href="{{ role.url | relative_url }}">{{ role.title }}</a>
 {% endfor %}

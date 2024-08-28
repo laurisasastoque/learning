@@ -1,0 +1,10 @@
+- level: 0
+  name: Novice
+- level: 1
+  name: Beginner
+- level: 2
+  name: Intermediate
+- level: 3
+  name: Advanced
+- level: 4
+  name: Expert

@@ -16,7 +16,7 @@ layout: default
     <dd><a href="{{ page.resource_url }}">{{ page.resource_url }}</a></dd>
     
     <dt>Skills</dt>
-    <dd>{% include skill_levels.html skills=page.skill-levels %}</dd>
+    <dd>{% include skill_levels.html skills=page.skill-levels show_level=true%}</dd>
 
     <dt>Roles</dt>
     <dd>{% include roles.html roles=page.roles %}</dd>
