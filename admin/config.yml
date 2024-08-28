@@ -103,7 +103,25 @@ collections:
     required: false
   - label: "Resource Type"
     name: resource-type
-    widget: string
+    widget: "select"
+    options: [
+      "Article",
+      "Conference",
+      "Conference Proceedings",
+      "Degree Program",
+      "Event Recording",
+      "Group/Network",
+      "In Person Training",
+      "Journal",
+      "Knowledge Base",
+      "Mailing List",
+      "Online Training - Instructor Led",
+      "Online Training - Self Directed",
+      "Report",
+      "Scholarship/Grant",
+      "Toolkit",
+      "Training Content" 
+    ]
     required: false
   - label: "Accredited"
     name: accredited
