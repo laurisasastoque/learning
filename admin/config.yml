@@ -1,17 +1,27 @@
 # config.yml
+# ----------
+# See here for documentation:
+#   https://decapcms.org/docs/configuration-options/
+#
 
+# How to talk to the Git datafile store:
 backend:
-  #name: git-gateway
   name: github
   repo: Digital-Preservation-Coalition/learning
   branch: main
+
+# Where in the repository to store uploaded files (may be overridden for specific collection/fields below):
 media_folder: "assets/uploads"
 
 # Use the PR-based editorial workflow:
+# Not in use as it's quite complicated and the editing team is small.
 #publish_mode: editorial_workflow
 
+# Path where the site is hosted:
+# Not needed at present.
 #site_url: /learning/
 
+# Defining the different collections of items:
 collections:
 
 - name: resources
@@ -23,10 +33,20 @@ collections:
   media_folder: ''
   public_folder: ''
   fields:
-  - { label: "Name", name: title, widget: string }
-  - { label: "Description", name: "body", widget: "markdown", required: false }
-  - { label: "Logo", name: "logo", widget: "image", required: false }
-  - { label: URL, name: resource_url, widget: string }
+  - label: "Name"
+    name: title
+    widget: string
+  - label: "Description"
+    name: "body"
+    widget: "markdown"
+    required: false
+  - label: "Logo"
+    name: "logo"
+    widget: "image"
+    required: false
+  - label: URL
+    name: resource_url
+    widget: string
   - label: "Skills"
     label_singular: "Skill"
     name: skill-levels
@@ -59,20 +79,44 @@ collections:
     required: false
     fields:
     - { label: "Learning Objective", name: learning-objective, widget: string, required: false }
-  - { label: "Cost", name: cost, widget: string, required: false }
-  - { label: "Language", name: language, widget: string, required: false }
+  - label: "Cost"
+    name: cost
+    widget: string
+    required: false
+  - label: "Language"
+    name: language
+    widget: string
+    required: false
   - label: "Creators"
     name: creators
     widget: list
     required: false
     fields:
     - { label: "Creator", name: creator, widget: string, required: false }
-  - { label: "Provider", name: provider, widget: string, required: false }
-  - { label: "Licence", name: licence, widget: string, required: false }
-  - { label: "Resource Type", name: resource-type, widget: string, required: false }
-  - { label: "Accredited", name: accredited, widget: string, required: false }
-  - { label: "Open Access", name: open-access, widget: boolean, required: false }
-  - { label: "Series", name: series, widget: string, required: false }
+  - label: "Provider"
+    name: provider
+    widget: string
+    required: false
+  - label: "Licence"
+    name: licence
+    widget: string
+    required: false
+  - label: "Resource Type"
+    name: resource-type
+    widget: string
+    required: false
+  - label: "Accredited"
+    name: accredited
+    widget: string
+    required: false
+  - label: "Open Access"
+    name: open-access
+    widget: boolean
+    required: false
+  - label: "Series"
+    name: series
+    widget: string
+    required: false
   - label: files
     name: files
     widget: file
@@ -97,7 +141,9 @@ collections:
   folder: _skills
   create: true
   fields:
-  - { label: Title, name: title, widget: string }
+  - label: Title
+    name: title
+    widget: string
   - label: "Competency Area"
     name: "competency-area"
     widget: "select"
@@ -108,7 +154,10 @@ collections:
       "Legal and Social Responsibilities", 
       "Digital Preservation Domain Specific"
     ]
-  - { label: "Body", name: "body", widget: "markdown", required: false }
+  - label: "Body"
+    name: "body"
+    widget: "markdown"
+    required: false
 
 - name: roles
   label: Roles
@@ -116,8 +165,13 @@ collections:
   folder: _roles
   create: true
   fields:
-  - { label: Name, name: title, widget: string }
-  - { label: "Description", name: "body", widget: "markdown", required: false }
+  - label: Name
+    name: title
+    widget: string
+  - label: "Description"
+    name: "body"
+    widget: "markdown" 
+    required: false
   - label: "Alternative Names"
     name: alternative-names
     widget: list
