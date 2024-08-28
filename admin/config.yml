@@ -36,72 +36,12 @@ collections:
   - label: "Name"
     name: title
     widget: string
-  - label: "Description"
-    name: "body"
-    widget: "markdown"
-    required: false
-  - label: "Logo"
-    name: "logo"
-    widget: "image"
-    required: false
-  - label: URL
+    required: true
+  - label: Link
     name: resource_url
     widget: string
-  - label: "Skills"
-    label_singular: "Skill"
-    name: skill-levels
-    widget: list
-    # There must be at least one entry for skill level:
-    min: 1
-    max: 10
-    # Show skill and level in collapsed view of each entry:
-    summary: '{{fields.skill}} - level {{fields.level}}'
-    fields:
-        - { label: "Skill", name: "skill", widget: "relation", collection: "skills", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
-        - label: "Level"
-          name: "level"
-          widget: "select"
-          options:
-          - { label: "0. Novice", value: "0" }
-          - { label: "1. Beginner", value: "1" }
-          - { label: "2. Intermediate", value: "2" }
-          - { label: "3. Advanced", value: "3" }
-          - { label: "4. Expert", value: "4" }
-  - label: "Roles"
-    label_singular: "Role"
-    name: roles
-    widget: list
-    fields:
-        - { label: "Role", name: "role", widget: "relation", collection: "roles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
-  - label: "Learning Objectives"
-    name: learning-objectives
-    widget: list
-    required: false
-    fields:
-    - { label: "Learning Objective", name: learning-objective, widget: string, required: false }
-  - label: "Cost"
-    name: cost
-    widget: string
-    required: false
-  - label: "Language"
-    name: language
-    widget: string
-    required: false
-  - label: "Creators"
-    name: creators
-    widget: list
-    required: false
-    fields:
-    - { label: "Creator", name: creator, widget: string, required: false }
-  - label: "Provider"
-    name: provider
-    widget: string
-    required: false
-  - label: "Licence"
-    name: licence
-    widget: string
-    required: false
-  - label: "Resource Type"
+    required: true
+  - label: "Type of Resource"
     name: resource-type
     widget: "select"
     options: [
@@ -122,6 +62,81 @@ collections:
       "Toolkit",
       "Training Content" 
     ]
+    required: true
+  - label: "Provider"
+    name: provider
+    widget: string
+    required: true
+  - label: "Creator(s)"
+    name: creators
+    widget: list
+    required: false
+    fields:
+    - { label: "Creator", name: creator, widget: string, required: false }
+  - label: "Release Year"
+    name: release-year
+    widget: "number"
+    value_type: "int"
+    required: false
+  - label: "Description"
+    name: "body"
+    widget: "markdown"
+    required: true
+  - label: "Learning Objectives"
+    name: learning-objectives
+    widget: list
+    required: false
+    fields:
+    - { label: "Learning Objective", name: learning-objective, widget: string, required: false }
+  - label: "Related Skills"
+    label_singular: "Skill"
+    name: skill-levels
+    widget: list
+    # There must be at least one entry for skill level:
+    min: 1
+    max: 10
+    # Show skill and level in collapsed view of each entry:
+    summary: '{{fields.skill}} - level {{fields.level}}'
+    fields:
+        - { label: "Skill", name: "skill", widget: "relation", collection: "skills", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+        - label: "Level"
+          name: "level"
+          widget: "select"
+          options:
+          - { label: "0. Novice", value: "0" }
+          - { label: "1. Beginner", value: "1" }
+          - { label: "2. Intermediate", value: "2" }
+          - { label: "3. Advanced", value: "3" }
+          - { label: "4. Expert", value: "4" }
+  - label: "Related Roles"
+    label_singular: "Related Role"
+    name: roles
+    widget: list
+    fields:
+        - { label: "Role", name: "role", widget: "relation", collection: "roles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+  - label: "Country"
+    name: country
+    widget: string
+    required: false
+  - label: "Language"
+    name: language
+    widget: string
+    required: false
+  - label: "Free or Paid"
+    name: free-or-paid
+    widget: select,
+    options: [
+      "Free",
+      "Paid"
+    ]
+    required: true
+  - label: "Cost"
+    name: cost
+    widget: string
+    required: false
+  - label: "Qualifications"
+    name: qualifications
+    widget: string
     required: false
   - label: "Accredited"
     name: accredited
@@ -136,26 +151,48 @@ collections:
       "Unsure"
     ]
     required: false
-  - label: "Series"
+    # ANJ This field is a bit confusing, i.e. _what_ actions are restricted?
+  - label: "Open license"
+    name: open-license
+    widget: select,
+    options: [
+      "Open License",
+      "Restricted License",
+      "Unsure"
+    ]
+    required: false
+  - label: "Licence"
+    name: licence
+    widget: string
+    required: false
+  - label: Part of Series"
     name: series
     widget: string
     required: false
-  - label: files
+  - label: "Related Resources"
+    label_singular: "Related Resource"
+    name: related-items
+    widget: list
+    fields:
+        - { label: "Resource", name: "resource", widget: "relation", collection: "resources", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+    required: false
+  - label: "Resource Materials"
     name: files
     widget: file
     required: false
     media_library:
       config:
         multiple: true
-  - label: "Related Items"
-    label_singular: "Related Item"
-    name: related-items
-    widget: list
-    fields:
-        - { label: "Resource", name: "resource", widget: "relation", collection: "resources", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+  - label: "Logo"
+    name: "logo"
+    widget: "image"
     required: false
-  - label: "Resource record created on"
+  - label: "Entry Created"
     name: "created"
+    widget: "datetime"
+    date_format: "YYYY-MM-DD"
+  - label: "Entry Updated"
+    name: "updated"
     widget: "datetime"
     date_format: "YYYY-MM-DD"
 
