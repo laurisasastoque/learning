@@ -33,7 +33,7 @@ collections:
   media_folder: ''
   public_folder: ''
   fields:
-  - label: "Name"
+  - label: "Resource Name"
     name: title
     widget: string
     required: true
@@ -41,6 +41,7 @@ collections:
     name: resource_url
     widget: string
     required: true
+    hint: "Please link to a publicly-accessible page for this resource."
   - label: "Type of Resource"
     name: resource-type
     widget: "select"
@@ -149,16 +150,6 @@ collections:
     options: [
       "Yes",
       "No",
-      "Unsure"
-    ]
-    required: false
-    # ANJ This field is a bit confusing, i.e. _what_ actions are restricted?
-  - label: "Open license"
-    name: open-license
-    widget: select
-    options: [
-      "Open License",
-      "Restricted License",
       "Unsure"
     ]
     required: false
