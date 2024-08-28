@@ -77,6 +77,7 @@ collections:
     name: release-year
     widget: "number"
     value_type: "int"
+    min: 1900
     required: false
   - label: "Description"
     name: "body"
@@ -124,7 +125,7 @@ collections:
     required: false
   - label: "Free or Paid"
     name: free-or-paid
-    widget: select,
+    widget: select
     options: [
       "Free",
       "Paid"
@@ -144,7 +145,7 @@ collections:
     required: false
   - label: "Open Access"
     name: open-access
-    widget: select,
+    widget: select
     options: [
       "Yes",
       "No",
@@ -154,7 +155,7 @@ collections:
     # ANJ This field is a bit confusing, i.e. _what_ actions are restricted?
   - label: "Open license"
     name: open-license
-    widget: select,
+    widget: select
     options: [
       "Open License",
       "Restricted License",
