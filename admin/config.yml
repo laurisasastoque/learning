@@ -131,9 +131,9 @@ collections:
     name: open-access
     widget: select,
     options: [
-      "yes",
-      "no",
-      "unsure"
+      "Yes",
+      "No",
+      "Unsure"
     ]
     required: false
   - label: "Series"
