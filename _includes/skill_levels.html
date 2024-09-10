@@ -6,7 +6,7 @@
     {{ skill-level.skill }}
   </a>
   {% if include.show_level==null %}
-  <button type="button" class="btn btn-danger active"><abbr title="Level {{level.level}} &ndash; {{level.name}}">{{level.level}}</abbr></button>
+  <button type="button" class="btn btn-danger active"><abbr title="Level {{level.level}} &ndash; {{level.name}}">L{{level.level}}</abbr></button>
   {% else %}
   <button type="button" class="btn btn-danger active">Level {{level.level}} &ndash; {{level.name}}</button>
   {% endif %}
