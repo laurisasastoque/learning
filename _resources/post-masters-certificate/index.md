@@ -3,6 +3,8 @@ title: Post-Master's Certificate
 resource_url: https://ischool.sjsu.edu/post-masters-pathways-and-courses
 resource-type: Training Content
 provider: "San Jose State University "
+creators:
+  - creator: Erin Robinson
 skill-levels:
   - skill: Information Management Principles
     level: "1"
