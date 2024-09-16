@@ -1,5 +1,5 @@
 ---
-title: Web Archiving Course
+title: UNT Web Archiving Course
 resource_url: https://github.com/vphill/web-archiving-course
 resource-type: Training Content
 provider: Mark Phillips, Ph.D.
