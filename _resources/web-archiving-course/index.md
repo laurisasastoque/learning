@@ -10,6 +10,10 @@ learning-objectives: []
 skill-levels:
   - skill: Approaches to Preservation
     level: "0"
+  - skill: DP Standards and Models
+    level: "0"
+  - skill: Metadata Standards and Implementation
+    level: "0"
 roles:
   - role: Digital Preservation Trainee
   - role: Web Archivist
@@ -23,6 +27,6 @@ licence: This work is licensed under a Creative Commons Attribution 4.0
 created: 2024-09-16
 updated: 2024-09-16
 ---
-Syllabus for a course provided by Dr. Mark Phillips. This course is divided into modules that are designed to build sequentally throughout the course.
+Syllabus for a course provided by Dr. Mark Phillips (University of North Texas). This course is divided into modules that are designed to build sequentally throughout the course.
 
-There are fourteen modules in total starting the first week of class and ending the last week of the semester.
+There are fourteen modules in total covering a wide range of web archiving topics.
