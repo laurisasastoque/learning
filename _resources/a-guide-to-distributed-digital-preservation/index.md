@@ -6,7 +6,7 @@ provider: Katherine Skinner and Matt Schultz / Educopia Institute
 creators:
   - creator: Katherine Skinner
   - creator: Matt Schults
-release-year: 2008
+release-year: 2010
 learning-objectives:
   - learning-objective: Gain a philosophical and practical understanding of
       distributed digital preservation
