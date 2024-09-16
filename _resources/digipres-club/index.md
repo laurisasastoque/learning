@@ -12,6 +12,15 @@ skill-levels:
     level: "2"
   - skill: Approaches to Preservation
     level: "3"
+roles:
+  - role: Digital Preservation Archivist or Librarian
+  - role: Digital Preservation Developer
+  - role: Digital Preservation Officer
+  - role: Digital Preservation Program Manager
+  - role: Digital Preservation Trainee
+  - role: Information Studies Student
+  - role: Senior Executive or Administrator
+  - role: Web Archivist
 free-or-paid: Free
 created: 2024-09-16
 updated: 2024-09-16
