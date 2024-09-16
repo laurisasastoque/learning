@@ -10,6 +10,9 @@ skill-levels:
     level: "1"
   - skill: DP Standards and Models
     level: "1"
+roles:
+  - role: Digital Preservation Archivist or Librarian
+  - role: Digital Preservation Trainee
 language: Mandarin Chinese, Arabic, English
 free-or-paid: Paid
 created: 2024-09-16
