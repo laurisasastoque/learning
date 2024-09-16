@@ -6,7 +6,7 @@ provider: MedieArea
 skill-levels:
   - skill: Approaches to Preservation
     level: "2"
-free-or-paid: Paid
+free-or-paid: Free
 created: 2024-09-16
 updated: 2024-09-16
 ---
