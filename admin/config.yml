@@ -101,6 +101,7 @@ collections:
     label_singular: "Skill"
     name: skill-levels
     widget: list
+    options_length: 50
     # There must be at least one entry for skill level:
     min: 1
     max: 10
