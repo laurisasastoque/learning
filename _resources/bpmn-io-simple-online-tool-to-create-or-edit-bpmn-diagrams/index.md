@@ -6,6 +6,8 @@ provider: Camunda
 skill-levels:
   - skill: Workflow Development and Implementation
     level: "1"
+  - skill: Collaboration and Teamwork
+    level: "1"
 language: English
 free-or-paid: Free
 related-items:
