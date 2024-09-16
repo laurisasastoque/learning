@@ -12,6 +12,10 @@ learning-objectives:
 skill-levels:
   - skill: Approaches to Preservation
     level: "0"
+  - skill: DP Standards and Models
+    level: "0"
+  - skill: Policy Development
+    level: "0"
 language: English
 free-or-paid: Free
 licence: CC NC-BY-SA
