@@ -11,6 +11,14 @@ learning-objectives:
 skill-levels:
   - skill: DP Standards and Models
     level: "0"
+  - skill: DP Standards and Models
+    level: "1"
+  - skill: DP Standards and Models
+    level: "2"
+  - skill: DP Standards and Models
+    level: "3"
+  - skill: DP Standards and Models
+    level: "4"
 roles:
   - role: Digital Preservation Archivist or Librarian
   - role: Digital Preservation Developer
