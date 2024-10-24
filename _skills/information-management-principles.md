@@ -2,7 +2,6 @@
 title: Information Management Principles
 competency-area: Digital Preservation Domain Specific
 ---
-
 ## Example Statement
 
 Can understand and apply core information management principles

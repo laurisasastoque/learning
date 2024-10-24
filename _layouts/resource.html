@@ -2,6 +2,8 @@
 layout: default
 ---
 
+
+
 {% if page.logo %}
 {% assign base_path = page.url | remove: "/index.html" | append: "/" %}
 <img src="{{ page.logo | prepend: base_path | relative_url  }}" class="img-thumbnail float-end mx-3" alt="Edit this entry" style="max-width: 200px";>

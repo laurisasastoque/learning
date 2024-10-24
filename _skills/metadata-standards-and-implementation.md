@@ -2,7 +2,6 @@
 title: Metadata Standards and Implementation
 competency-area: Digital Preservation Domain Specific
 ---
-
 ## Example Statement
 
 Can identify and implement relevant metadata standards for managing and providing access to digital content	

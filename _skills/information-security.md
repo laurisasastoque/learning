@@ -2,7 +2,6 @@
 title: Information Security
 competency-area: Information Technology
 ---
-
 ## Example Statement
 
 Can understand and input to the implementation of information security protocols and processes

@@ -2,7 +2,6 @@
 title: Analysis and Decision-Making
 competency-area: Governance, Resourcing, and Management
 ---
-
 ## Example Statement
 
 Can think critically, analyze data, make difficult decisions, and solve complex problems	

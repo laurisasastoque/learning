@@ -2,7 +2,6 @@
 title: Workflow Development and Implementation
 competency-area: Information Technology
 ---
-
 ## Example Statement
 
 Can design, document, and use workflows to manage the preservation of digital information	

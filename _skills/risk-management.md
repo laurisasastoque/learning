@@ -2,7 +2,6 @@
 title: Risk Management
 competency-area: Governance, Resourcing, and Management
 ---
-
 ## Example Statement
 
 Can apply risk management techniques for decision making, planning, and management

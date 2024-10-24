@@ -2,7 +2,6 @@
 title: Storage Infrastructures
 competency-area: Information Technology
 ---
-
 ## Example Statement
 
 Can understand the elements required for robust storage infrastructures and processes required to manage them	

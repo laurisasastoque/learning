@@ -2,7 +2,6 @@
 title: Computer Programming
 competency-area: Information Technology
 ---
-
 ## Example Statement
 
 Can develop algorithms and generate related programs and/or scripts	

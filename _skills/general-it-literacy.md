@@ -2,7 +2,6 @@
 title: General IT Literacy
 competency-area: Information Technology
 ---
-
 ## Example Statement
 
 Can understand and work with a range of key information formats and systems

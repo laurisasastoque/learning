@@ -2,7 +2,6 @@
 title: Ethics
 competency-area: Legal and Social Responsibilities
 ---
-
 ## Example Statement
 
 Can understand and apply ethical approaches to digital preservation	

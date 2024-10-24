@@ -2,7 +2,6 @@
 title: Collaboration and Teamwork
 competency-area: Communications and Advocacy
 ---
-
 ## Example Statement
 
 Can collaborate with internal and external colleagues, including working well as part of a team	

@@ -2,7 +2,6 @@
 title: Approaches to Preservation
 competency-area: Digital Preservation Domain Specific
 ---
-
 ## Example Statement
 
 Can understand, select, and implement suitable preservation approaches

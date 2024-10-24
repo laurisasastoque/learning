@@ -2,7 +2,6 @@
 title: Managing Access
 competency-area: Digital Preservation Domain Specific
 ---
-
 ## Example Statement
 
 Can plan and input to the implementation of discovery and access services

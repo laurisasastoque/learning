@@ -2,7 +2,6 @@
 title: Strategy and Planning
 competency-area: Governance, Resourcing, and Management
 ---
-
 ## Example Statement
 
 Can develop and implement strategy using suitable project planning and management techniques	

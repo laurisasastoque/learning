@@ -2,7 +2,6 @@
 title: Legal and Regulatory Compliance
 competency-area: Legal and Social Responsibilities
 ---
-
 ## Example Statement
 
 Can manage the organization's legal and regulatory compliance in relation to digital preservation	

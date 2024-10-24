@@ -2,7 +2,6 @@
 title: System Procurement
 competency-area: Information Technology
 ---
-
 ## Example Statement
 
 Can identify the requirements for a new system or service and utilize these to select and procure a solution	

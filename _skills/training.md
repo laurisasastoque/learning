@@ -2,7 +2,6 @@
 title: Training
 competency-area: Communications and Advocacy
 ---
-
 ## Example Statement
 
 Can develop and present training and development opportunities using appropriate delivery methodologies	
