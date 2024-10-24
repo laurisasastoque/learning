@@ -2,6 +2,7 @@
 title: Staff Management
 competency-area: Governance, Resourcing, and Management
 ---
+
 ## Example Statement
 
 Can recruit, manage, motivate, and support competent staff	

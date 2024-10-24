@@ -2,6 +2,7 @@
 title: Competency Framework
 navigation: 10
 ---
+
 <img src="./media/image1.jpg" style="width:3.78787in;height:0.83333in" alt="The Digital Preservation Coalition (DPC) logo" />
 
 **DPC Digital Preservation Competency Framework**

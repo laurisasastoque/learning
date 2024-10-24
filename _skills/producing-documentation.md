@@ -2,6 +2,7 @@
 title: Producing Documentation
 competency-area: Communications and Advocacy
 ---
+
 ## Example Statement
 
 Can produce documentation required to manage effective digital preservation

@@ -2,6 +2,7 @@
 title: Policy Development
 competency-area: Governance, Resourcing, and Management
 ---
+
 ## Example Statement
 
 Can develop robust policy with reference to organizational goals, values, and existing policy.

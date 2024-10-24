@@ -2,6 +2,7 @@
 title: Inclusion and Diversity
 competency-area: Legal and Social Responsibilities
 ---
+
 ## Example Statement
 
 Can ensure inclusion and diversity good practice is embedded in all digital preservation activities

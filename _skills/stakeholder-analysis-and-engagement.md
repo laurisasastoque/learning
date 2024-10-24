@@ -2,6 +2,7 @@
 title: Stakeholder Analysis and Engagement
 competency-area: Communications and Advocacy
 ---
+
 ## Example Statement
 
 Can manage stakeholder engagement, incl. identification, mapping, and planning	

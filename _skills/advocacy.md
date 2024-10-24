@@ -2,6 +2,7 @@
 title: Advocacy
 competency-area: Communications and Advocacy
 ---
+
 ## Example Statement
 
 Can employ a range of advocacy techniques to raise awareness of digital preservation 

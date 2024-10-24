@@ -2,6 +2,7 @@
 title: Effective Communication
 competency-area: Communications and Advocacy
 ---
+
 ## Example Statement
 
 Can communicate effectively, both verbally and in written formats	

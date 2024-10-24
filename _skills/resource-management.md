@@ -2,6 +2,7 @@
 title: Resource Management
 competency-area: Governance, Resourcing, and Management
 ---
+
 ## Example Statement
 
 Can effectively manage available resources	

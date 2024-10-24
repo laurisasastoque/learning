@@ -2,6 +2,7 @@
 title: DP Standards and Models
 competency-area: Digital Preservation Domain Specific
 ---
+
 ## Example Statement
 
 Can understand, select, and implement relevant digital preservation standards and models

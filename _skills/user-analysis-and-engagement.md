@@ -2,6 +2,7 @@
 title: User Analysis and Engagement
 competency-area: Communications and Advocacy
 ---
+
 ## Example Statement
 
 Can undertake an analysis of users and their needs through a variety of techniques	
