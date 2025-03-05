@@ -117,7 +117,7 @@ collections:
           - { label: "2. Intermediate", value: "2" }
           - { label: "3. Advanced", value: "3" }
           - { label: "4. Expert", value: "4" }
-    hint: "A related skill element and level from the <a href='https://www.dpconline.org/digipres/prof-development/dp-competency'>DPC DP Competency Framework</a>."
+    hint: "A related skill element and level from the [DPC DP Competency Framework](https://www.dpconline.org/digipres/prof-development/dp-competency)."
   - label: "Related Roles"
     label_singular: "Related Role"
     name: roles
