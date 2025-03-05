@@ -14,8 +14,7 @@ backend:
 media_folder: "assets/uploads"
 
 # Use the PR-based editorial workflow:
-# Not in use as it's quite complicated and the editing team is small.
-#publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 # Path where the site is hosted:
 # Not needed at present.
@@ -48,6 +47,7 @@ collections:
     widget: "select"
     options: [
       "Article",
+      "Book/eBook",
       "Conference",
       "Conference Proceedings",
       "Degree Program",
@@ -101,14 +101,13 @@ collections:
     label_singular: "Skill"
     name: skill-levels
     widget: list
-    options_length: 50
     # There must be at least one entry for skill level:
     min: 1
     max: 10
     # Show skill and level in collapsed view of each entry:
     summary: '{{fields.skill}} - level {{fields.level}}'
     fields:
-        - { label: "Skill", name: "skill", widget: "relation", collection: "skills", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
+        - { label: "Skill", name: "skill", widget: "relation", collection: "skills", search_fields: ["title"], value_field: "title", display_fields: ["title"], options_length: 100 }
         - label: "Level"
           name: "level"
           widget: "select"
@@ -118,14 +117,14 @@ collections:
           - { label: "2. Intermediate", value: "2" }
           - { label: "3. Advanced", value: "3" }
           - { label: "4. Expert", value: "4" }
-    hint: "A related skill element and level from the DPC DP Competency Framework."
+    hint: "A related skill element and level from the <a href='https://www.dpconline.org/digipres/prof-development/dp-competency'>DPC DP Competency Framework</a>."
   - label: "Related Roles"
     label_singular: "Related Role"
     name: roles
     widget: list
     fields:
         - { label: "Role", name: "role", widget: "relation", collection: "roles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
-    hint: "Specific roles (DPC Example Role Descriptions) for whom this resource might be useful."
+    hint: "Specific roles for whom this resource might be useful."
   - label: "Country"
     name: country
     widget: select
@@ -409,7 +408,9 @@ collections:
   label: Skills
   label_singular: Skill
   folder: _skills
-  create: true
+  create: false
+  delete: false
+  hide: true
   fields:
   - label: Title
     name: title
@@ -433,7 +434,9 @@ collections:
   label: Roles
   label_singular: Role
   folder: _roles
-  create: true
+  create: false
+  delete: false
+  hide: true
   fields:
   - label: Name
     name: title
