@@ -42,13 +42,6 @@
     }
   </style>
 
-    {% if site.editable %}
-    <div class="alert alert-warning" role="alert">
-      <strong>Warning: </strong>
-      This is the work-in-progress version of the site that is used for edits and previews. The live site is at <a href="https://digital-preservation-coalition.github.io/learning/" class="alert-link">https://digital-preservation-coalition.github.io/learning/</a>. For editors, the content management system is available <a href="/admin/" class="alert-link">here</a> and requires a GitHub account to log in.
-    </div>
-    {% endif %}
-
     {% include navigation.html %}
 
 
@@ -63,7 +56,6 @@
   <a href="{{ site.source_prefix }}{{ page.path }}">View on GitHub</a>.
 </p>
     </div>
-
   
     <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
