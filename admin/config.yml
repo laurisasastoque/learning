@@ -9,6 +9,7 @@ backend:
   name: github
   repo: Digital-Preservation-Coalition/learning
   branch: main
+  squash_merges: true
   # This enables contribution from non-repo-owners, but only works on GitHub:
   # https://decapcms.org/docs/open-authoring/
   open_authoring: true
@@ -17,8 +18,8 @@ backend:
 media_folder: "assets/uploads"
 
 # Use the PR-based editorial workflow:
+# https://decapcms.org/docs/editorial-workflows/
 publish_mode: editorial_workflow
-
 
 # Path where the site is hosted:
 # Not needed at present.
