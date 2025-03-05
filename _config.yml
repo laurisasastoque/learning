@@ -1,7 +1,7 @@
 title: DigiPres Learning Resources
 description: Learning resources site
 
-editor_url: https://digital-preservation-coalition.github.io/
+editor_url: https://digital-preservation-coalition.github.io/learning
 editable: true
 baseurl: "/learning/"
 source_prefix: https://github.com/Digital-Preservation-Coalition/learning/blob/main/
