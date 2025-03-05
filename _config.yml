@@ -1,9 +1,10 @@
 title: DigiPres Learning Resources
 description: Learning resources site
 
-editor_url: https://digipres-learning-resources.netlify.app/
-editable: false
+editor_url: https://digital-preservation-coalition.github.io/
+editable: true
 baseurl: "/learning/"
+source_prefix: https://github.com/Digital-Preservation-Coalition/learning/blob/main/
 
 markdown: kramdown
 
