@@ -9,12 +9,16 @@ backend:
   name: github
   repo: Digital-Preservation-Coalition/learning
   branch: main
+  # This enables contribution from non-repo-owners, but only works on GitHub:
+  # https://decapcms.org/docs/open-authoring/
+  open_authoring: true
 
 # Where in the repository to store uploaded files (may be overridden for specific collection/fields below):
 media_folder: "assets/uploads"
 
 # Use the PR-based editorial workflow:
 publish_mode: editorial_workflow
+
 
 # Path where the site is hosted:
 # Not needed at present.
