@@ -1,14 +1,14 @@
 {% for skill-level in include.skills %}       
 {% assign skill = site.skills | where:"title", skill-level.skill  | first %}
 {% assign level = site.data.levels | where:"level", skill-level.level  | first %}
-<div class="btn-group btn-group-sm m-1" role="group" aria-label="...">
+<div class="btn-group btn-group-sm m-1" role="group" aria-label="..." data-pagefind-filter="skill:{{ skill-level.skill }}">
   <a href="{{ skill.url | relative_url }}" class="btn btn-primary">
     {{ skill-level.skill }}
   </a>
   {% if include.show_level==null %}
   <button type="button" class="btn btn-danger active"><abbr title="Level {{level.level}} &ndash; {{level.name}}">L{{level.level}}</abbr></button>
   {% else %}
-  <button type="button" class="btn btn-danger active">Level {{level.level}} &ndash; {{level.name}}</button>
+  <button type="button" class="btn btn-danger active" data-pagefind-filter="level:{{ level.name }}">Level {{level.level}} &ndash; {{level.name}}</button>
   {% endif %}
 </div>
 {% endfor %}

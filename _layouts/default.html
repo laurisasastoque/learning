@@ -42,17 +42,22 @@
     }
   </style>
 
+    {% if site.editable %}
+    <div class="alert alert-warning" role="alert">
+      <strong>Warning: </strong>
+      This is the work-in-progress version of the site that is used for edits and previews. The live site is at <a href="https://digital-preservation-coalition.github.io/learning/" class="alert-link">https://digital-preservation-coalition.github.io/learning/</a>. For editors, the content management system is available <a href="/admin/" class="alert-link">here</a> and requires a GitHub account to log in.
+    </div>
+    {% endif %}
 
     {% include navigation.html %}
 
 
-    <div class="container-sm my-3 my-lg-5" data-pagefind-body>
-      <h1{% if page.collection %} data-pagefind-filter="kind:{{ page.collection | capitalize }}"{% else %} data-pagefind-filter="kind:Pages"{% endif %}>{{ page.title }}</h1>
+    <div class="container-sm my-3 my-lg-5"{% if page.collection == "resources" %}data-pagefind-body{% endif %}>
+      <h1>{{ page.title }}</h1>
 
       {{ content }}
 
       <hr>
-  
 <p>
   Page last modified on {{ page.last_modified_at | date: "%Y-%m-%d at %H:%M" }}.
   <a href="{{ site.source_prefix }}{{ page.path }}">View on GitHub</a>.
