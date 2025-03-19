@@ -1,10 +1,10 @@
 - level: 0
-  name: Novice
+  name: Awareness
 - level: 1
-  name: Beginner
+  name: Understanding
 - level: 2
-  name: Intermediate
+  name: Basic Application
 - level: 3
-  name: Advanced
+  name: Advanced Application
 - level: 4
   name: Expert
