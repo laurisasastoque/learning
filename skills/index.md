@@ -50,9 +50,11 @@ tr.area-digital-preservation-domain-specific td {
 </table>
 
 {% if site.editable %}
+<!--
 <p style="text-align: right">
   <a target="_blank" class="btn btn-secondary" href="{{ site.editor_url }}/admin/#/collections/skills/new" role="button">Add A Skill</a>
 </p>
+-->
 {% endif %}
 
 
