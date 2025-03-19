@@ -29,8 +29,10 @@ title: Roles
 
 
 {% if site.editable %}
+<!--
 <p style="text-align: right">
   <a target="_blank" class="btn btn-primary" href="{{ site.editor_url }}/admin/#/collections/roles/new" role="button">Add A Role</a>
 </p>
+-->
 {% endif %}
 
