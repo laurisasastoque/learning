@@ -1,7 +1,7 @@
 ---
 title: Welcome to the DigiPres Learning Resources Portal!
 ---
-<img src="/assets/uploads/learnerbits.png" style="float: right; 
+<img src="./assets/uploads/learnerbits.png" style="float: right; 
   margin: 5px;">
 
 The aim of this new community resource is to help digital preservation practitioners, educators, and students find training and development opportunities and content. It was first developed as part of the [iPRES 2024](https://ipres2024.pubpub.org/) Start to Preserve stream and is maintained by the [Digital Preservation Coalition](www.dpconline.org).
