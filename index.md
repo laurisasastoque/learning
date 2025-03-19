@@ -13,6 +13,6 @@ To browse the current entries listed, please visit the [Resources page](<>). To 
 The resource portal will continue to be updated and improved in line with feedback from the digital preservation community. If you have any questions about the resource and how to use it, please email sharon.mcmeekin\[at]dpconline.org.
 
 <div class="alert alert-info" role="alert">
-If you would like to edit or contribute to the resource, this can be done via the <a href="/learning/admin/" class="alert-link">content management system</a>. 
+If you would like to edit or contribute to the resource, this can be done via the <a href="{{ site.editor_url }}/admin/" class="alert-link">content management system</a>. 
 You will need to be logged in to a GitHub account to make any edits or additions. All entries will then be approved by an admin before appearing online.
 </div>

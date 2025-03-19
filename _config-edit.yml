@@ -1,3 +1,4 @@
 editable: true
 # This is for Netlify and local dev
-baseurl: "" 
+baseurl: ""
+editor_url: ""
